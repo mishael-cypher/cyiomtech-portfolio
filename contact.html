@@ -175,7 +175,7 @@
                         <div class="col-lg-6 col-xl-6">
                             <div class="contact-form">
                                 <h3>Have Any Questions</h3>
-                                <form id="contact-form" onsubmit="reset(); return false;" action="https://fabform.io/f/dz_2N6C" method="post">
+                                <form id="contact-form" onsubmit="sent()" action="https://fabform.io/f/dz_2N6C" method="post">
                                     <div class="row">
                                         <div class="col-12">
                                             <input type="text" name="name" placeholder="Enter your name">
@@ -383,6 +383,14 @@
             );
         }
     </script> -->
+    <script>
+        function sent(){
+            const message = document.querySelector(".form-message");
+
+            const text = document.createTextNode("Email was sent succesfully")
+            message.appendChild(text)
+        }
+    </script>
 </body>
 
 </html>
